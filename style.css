@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("images/bg.jpg")
+}
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 420px;
+  justify-content: center;
+}
+.container .box {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  border: 2px solid #333;
+  background: #fff;
+}
+.container .box1{
+  background: url("images/image1.jpg");
+  background-size: cover;
+}
+.container .box2{
+  background: url("images/image2.jpg");
+  background-size: cover;
+}
+.container .box3{
+  background: url("images/image3.jpg");
+  background-size: cover;
+}
+.container .box4{
+  background: url("images/image4.jpg");
+  background-size: cover;
+}
+.box .image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/astronaut.jpg");
+}
+.box.hovered {
+  border: 2px dashed #ccc;
+}
